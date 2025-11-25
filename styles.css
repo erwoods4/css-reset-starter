@@ -73,7 +73,7 @@ body{
 /* Styles for the Header, Main, & Footer */
 /* Limits the width, adds a background color and padding, and centers them on the page */
 header, main, footer{
-    width: 1000px;
+    width: 950px;
     max-width: 100%;
     background: var(--white);
     margin: 0 auto;
@@ -99,8 +99,9 @@ nav{
 
 nav ul{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 0.75rem;
+    padding: 0;
 }
 
 nav a{
@@ -111,7 +112,8 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     border-radius: 2px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* Nav Hover Styles */
@@ -124,31 +126,19 @@ nav a:hover{
 main > section{
     padding: 2.5rem 0;
 }
-main > section{
-    padding: 2.5rem 0;
-}
 
-h2, h3{
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-p{
-    max-width: 68ch;
-    margin: 0.5rem auto;
-    line-height: 1.5;
-}
-
-/* Links */
-a{
-    color: var(--red);
-}
 /* Styles for the h2 & h3 tags */
 h2, h3{
     text-align: center;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
 }
 
 /* Paragraph Styles */
